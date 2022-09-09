@@ -16,31 +16,32 @@ const Home: NextPage = () => {
 
       <main className="container mx-auto flex flex-col items-center justify-center min-h-screen p-4">
         <div className="flex">
-        <h1 className="text-5xl md:text-[5rem] leading-normal font-extrabold text-gray-700">
-          Pointing<span className="text-purple-300">Poker</span>
-        </h1>
-        <Image src="/cards.svg" alt="Poker Cards" width={128} height={128} />
+          <h1 className="text-5xl md:text-[5rem] leading-normal font-extrabold text-gray-700">
+            Pointing<span className="text-purple-300">Poker</span>
+          </h1>
+          <Image src="/cards.svg" alt="Poker Cards" width={128} height={128} />
         </div>
         <div className="p-8" />
         <div className="w-3/5">
-          <p>Welcome to pointing poker (aka planning poker)! Online, virtual and 
-            co-located agile teams use this application during their planning/pointing 
+          <p>Welcome to pointing poker (aka planning poker)! Online, virtual and
+            co-located agile teams use this application during their planning/pointing
             sessions to effectively communicate points for stories.
           </p>
         </div>
+        <div className="p-4" />
         <section>
-        <div className="border rounded-lg bg-white p-4">
-          <h3 className="text-purple-300 font-medium text-xl">Pointing Session</h3>
-          <div className="flex justify-center items-center space-x-4">
-          <button className={buttonStyle}>Create Sesh</button>
-          <p>..or..</p>
-          <form>
-          <input className="border p-1 m-1" placeholder="123abc"></input>
-          <button className={buttonStyle}>Join Sesh</button>
-          </form>
+          <div className="border rounded-lg bg-white p-4">
+            <h3 className="text-gray-700 font-medium text-xl">Pointing Session</h3>
+            <div className="p-1" />
+            <div className="flex justify-center items-center space-x-4">
+              <button className={buttonStyle}>Create Sesh</button>
+              <p>..or..</p>
+              <form>
+                <input className="border p-1 m-1" placeholder="123abc"></input>
+                <button className={buttonStyle}>Join Sesh</button>
+              </form>
+            </div>
           </div>
-
-        </div>
         </section>
       </main>
     </>
