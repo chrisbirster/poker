@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 
-const buttonStyle = "bg-purple-500 rounded-lg p-2 text-white"
+const buttonStyle = "bg-purple-400 rounded-lg p-2 text-white hover:bg-purple-300"
 
 const Home: NextPage = () => {
 
@@ -36,8 +36,8 @@ const Home: NextPage = () => {
             <div className="flex justify-center items-center space-x-4">
               <button className={buttonStyle}>Create Sesh</button>
               <p>..or..</p>
-              <form>
-                <input className="border p-1 m-1" placeholder="123abc"></input>
+              <form className="w-auto justify-end">
+                <input className="border p-1 m-1 outline-none focus:border-purple-500" placeholder="123abc"></input>
                 <button className={buttonStyle}>Join Sesh</button>
               </form>
             </div>
